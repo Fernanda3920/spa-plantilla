@@ -1,0 +1,152 @@
+{
+  "navbar": {
+    "home": "INICIO",
+    "about": "NOSOTROS",
+    "services": "SERVICIOS",
+    "contact": "CONTACTO",
+    "language": "ES_MX"
+  },
+  "hero": {
+    "title": "Bienvenido a SPA",
+    "subtitle": "Tu Refugio de Bienestar"
+  },
+  "about": {
+    "title": "SPA",
+    "description": "Nos dedicamos a brindar la mejor experiencia de spa",
+    "mainText": "Serenity es más que un spa, es una promesa de tranquilidad. Ubicado en [Ubicación], nos especializamos en ofrecer experiencias de bienestar personalizadas que rejuvenecen el cuerpo y calman la mente.",
+    "secondaryText": "Con un equipo apasionado y los mejores productos, transformamos tu tiempo en un lujo accesible. Tu viaje hacia la relajación comienza aquí."
+  },
+  "services": {
+    "title": "SERVICIOS DE SPA",
+    "description": "Aquí se describen los servicios de spa",
+    "viewMore": "Ver más",
+    "viewAll": "Ver todos los servicios",
+    "notFound": "Servicio no encontrado",
+    "backToServices": "Volver a Servicios",
+    "availableTreatments": "Tratamientos Disponibles",
+    "book": "Reservar",
+    "items": {
+      "therapeutic": {
+        "title": "Masajes Terapéuticos",
+        "description": "Nuestros masajes terapéuticos ayudan a relajar músculos, aliviar el estrés y mejorar la circulación.",
+        "subServices": [
+          {
+            "title": "Masaje Sueco",
+            "duration": "60 min",
+            "price": "$85",
+            "description": "Relajación profunda para aliviar tensiones musculares."
+          },
+          {
+            "title": "Drenaje Linfático",
+            "duration": "90 min",
+            "price": "$120",
+            "description": "Técnica suave para estimular el sistema linfático y desintoxicar."
+          },
+          {
+            "title": "Masaje Deportivo",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Enfoque en áreas específicas para la recuperación muscular."
+          }
+        ]
+      },
+      "signature": {
+        "title": "Colección Signature",
+        "description": "Experiencia exclusiva de tratamientos premium inspirados en rituales ancestrales y técnicas modernas.",
+        "subServices": [
+          {
+            "title": "Ritual Ancestral",
+            "duration": "120 min",
+            "price": "$250",
+            "description": "Tratamiento de cuerpo completo con aceites esenciales exóticos."
+          },
+          {
+            "title": "Experiencia Diamante",
+            "duration": "90 min",
+            "price": "$300",
+            "description": "Facial y corporal con productos de alta gama y oro coloidal."
+          }
+        ]
+      },
+      "facial": {
+        "title": "Tratamientos Faciales",
+        "description": "Cuida tu piel con productos naturales y técnicas profesionales que restauran su luminosidad.",
+        "subServices": [
+          {
+            "title": "Limpieza Profunda",
+            "duration": "60 min",
+            "price": "$75",
+            "description": "Eliminación de impurezas y puntos negros para una piel fresca."
+          },
+          {
+            "title": "Hidratación con Ácido Hialurónico",
+            "duration": "90 min",
+            "price": "$130",
+            "description": "Restaura la barrera de hidratación y suaviza las líneas finas."
+          }
+        ]
+      },
+      "wellness": {
+        "title": "Rituales de Bienestar",
+        "description": "Sumérgete en una experiencia sensorial que combina aromaterapia, música y técnicas de relajación.",
+        "subServices": [
+          {
+            "title": "Terapia de Piedras Calientes",
+            "duration": "90 min",
+            "price": "$140",
+            "description": "Combinación de masaje y calor para una relajación profunda y alivio del dolor."
+          },
+          {
+            "title": "Exfoliación con Sales Marinas",
+            "duration": "60 min",
+            "price": "$80",
+            "description": "Elimina células muertas, dejando la piel suave y renovada."
+          }
+        ]
+      }
+    }
+  },
+  "features": {
+    "technology": {
+      "title": "Tecnología",
+      "text": "Nuestra empresa cuenta con equipo de vanguardia y los estudios más novedosos para ortodoncia y cirugías maxilofaciales."
+    },
+    "locations": {
+      "title": "Sucursales",
+      "text": "Actualmente tenemos presencia en dos ubicaciones en la ciudad de Tijuana, además de sucursales en Rosarito, Tecate y Ensenada."
+    },
+    "medical": {
+      "title": "Atención Médica",
+      "text": "Nuestros médicos brindan atención personalizada generando confianza y asegurando un servicio de calidad."
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "Estamos aquí para ayudarte. Envíanos un mensaje y te responderemos a la brevedad.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono (Opcional)",
+    "message": "Mensaje",
+    "submit": "Enviar Mensaje"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "description": "Clínica de imagen y diagnóstico dental, ofreciendo estudios de vanguardia en Tijuana, Tecate, Rosarito y Ensenada.",
+    "navigation": "Navegación",
+    "services": "Servicios",
+    "contact": "Contáctanos",
+    "address": "Tijuana, B.C., México",
+    "phone": "Teléfono: (555) 123-4567",
+    "email": "Correo: info@dentametrics.com",
+    "copyright": "© {year} Dentametrics. Todos los derechos reservados.",
+    "links": {
+      "about": "Nosotros",
+      "services": "Servicios",
+      "contact": "Contacto",
+      "massage": "Masajes"
+    }
+  },
+  "common": {
+    "backToHome": "Volver al inicio"
+  }
+}

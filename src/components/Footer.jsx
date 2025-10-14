@@ -1,11 +1,12 @@
 // src/components/Footer.jsx
 
 import React from 'react';
-// Asumiendo que ya tienes react-icons, si no, instálalos con 'npm install react-icons'
+import { useTranslation } from 'react-i18next';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
-import logo from '../assets/spa-logo.png'; // Asegúrate de que la ruta sea correcta
+import logo from '../assets/spa-logo.png';
 
 const Footer = ({ logoSrc, logoAlt = 'Dentametrics Logo' }) => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-dark text-white py-5">
       <div className="container">
@@ -21,7 +22,7 @@ const Footer = ({ logoSrc, logoAlt = 'Dentametrics Logo' }) => {
               />
             </a>
             <p className="text-muted" style={{ fontSize: '0.9rem' }}>
-              Clínica de imagen y diagnóstico dental, ofreciendo estudios de vanguardia en Tijuana, Tecate, Rosarito y Ensenada.
+              {t('footer.description')}
             </p>
             {/* Íconos de redes sociales */}
             <div className="d-flex mt-4">
@@ -39,29 +40,29 @@ const Footer = ({ logoSrc, logoAlt = 'Dentametrics Logo' }) => {
           
           {/* Columna 2: Navegación Rápida */}
           <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
-            <h5 className="text-uppercase mb-4">Navegación</h5>
+            <h5 className="text-uppercase mb-4">{t('footer.navigation')}</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><a href="#nosotros" className="text-white text-decoration-none">Nosotros</a></li>
-              <li className="mb-2"><a href="#servicios" className="text-white text-decoration-none">Servicios</a></li>
-              <li className="mb-2"><a href="#contacto" className="text-white text-decoration-none">Contacto</a></li>
+              <li className="mb-2"><a href="#nosotros" className="text-white text-decoration-none">{t('footer.links.about')}</a></li>
+              <li className="mb-2"><a href="#servicios" className="text-white text-decoration-none">{t('footer.links.services')}</a></li>
+              <li className="mb-2"><a href="#contacto" className="text-white text-decoration-none">{t('footer.links.contact')}</a></li>
             </ul>
           </div>
           
           {/* Columna 3: Servicios */}
           <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-            <h5 className="text-uppercase mb-4">Servicios</h5>
+            <h5 className="text-uppercase mb-4">{t('footer.services')}</h5>
             <ul className="list-unstyled">
-              <li className="mb-2"><a href="#masajes" className="text-white text-decoration-none">Masajes</a></li>
+              <li className="mb-2"><a href="#masajes" className="text-white text-decoration-none">{t('footer.links.massage')}</a></li>
             </ul>
           </div>
 
           {/* Columna 4: Contacto */}
           <div className="col-lg-3 col-md-6">
-            <h5 className="text-uppercase mb-4">Contáctanos</h5>
+            <h5 className="text-uppercase mb-4">{t('footer.contact')}</h5>
             <ul className="list-unstyled text-muted" style={{ fontSize: '0.9rem' }}>
-              <li className="mb-2">Tijuana, B.C., México</li>
-              <li className="mb-2">Teléfono: (555) 123-4567</li>
-              <li className="mb-2">Email: info@dentametrics.com</li>
+              <li className="mb-2">{t('footer.address')}</li>
+              <li className="mb-2">{t('footer.phone')}</li>
+              <li className="mb-2">{t('footer.email')}</li>
             </ul>
           </div>
           
@@ -70,7 +71,7 @@ const Footer = ({ logoSrc, logoAlt = 'Dentametrics Logo' }) => {
         {/* Barra de copyright */}
         <div className="text-center pt-4 mt-4 border-top">
           <p className="mb-0 text-muted" style={{ fontSize: '0.8rem' }}>
-            © {new Date().getFullYear()} Dentametrics. Todos los derechos reservados.
+            {t('footer.copyright', { year: new Date().getFullYear() })}
           </p>
         </div>
         

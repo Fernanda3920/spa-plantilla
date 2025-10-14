@@ -1,38 +1,41 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // 👈 importa esto
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './ServicesSection.css';
 
 const servicesData = [
   {
     id: 1,
-    title: 'Masajes Terapéuticos',
+    key: 'therapeutic',
     imageUrl: 'https://cdn.pixabay.com/photo/2014/03/11/22/56/new-year-285587_1280.jpg',
   },
   {
     id: 2,
-    title: 'Colección Signature',
+    key: 'signature',
     imageUrl: 'https://cdn.pixabay.com/photo/2023/09/01/20/06/spa-8227623_1280.jpg',
   },
   {
     id: 3,
-    title: 'Tratamientos Faciales',
+    key: 'facial',
     imageUrl: 'https://cdn.pixabay.com/photo/2019/09/16/17/18/spa-4481538_1280.jpg',
   },
   {
     id: 4,
-    title: 'Rituales de Bienestar',
+    key: 'wellness',
     imageUrl: 'https://cdn.pixabay.com/photo/2018/02/27/03/36/stones-3184610_1280.jpg',
   },
 ];
 
 const ServicesSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="servicios" className="spa-services-section">
       <div className="container">
         <div className="header-content">
-          <h2 className="section-title">SERVICIOS DE SPA</h2>
+          <h2 className="section-title">{t('services.title')}</h2>
           <p className="section-subtitle">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo non deleniti provident recusandae, mollitia libero sapiente placeat quasi, minus aut explicabo fugiat consequatur quis ullam assumenda pariatur molestias ipsa accusantium.
+            {t('services.description')}
           </p>
         </div>
 
@@ -42,17 +45,16 @@ const ServicesSection = () => {
               <div className="image-wrapper">
                 <img
                   src={service.imageUrl}
-                  alt={service.title}
+                  alt={t(`services.items.${service.key}.title`)}
                   className="card-image"
                 />
               </div>
 
               <div className="card-footer">
-                <h3 className="card-title">{service.title}</h3>
+                <h3 className="card-title">{t(`services.items.${service.key}.title`)}</h3>
                 
-                {/* 👇 Navegación al detalle */}
                 <Link to={`/servicio/${service.id}`} className="view-more-btn">
-                  Ver mas
+                  {t('services.viewMore')}
                 </Link>
               </div>
             </div>
@@ -62,9 +64,9 @@ const ServicesSection = () => {
         <div className="view-all-container">
           <button
             className="view-all-btn"
-            onClick={() => console.log('Ver todos los servicios')}
+            onClick={() => console.log('View all services')}
           >
-            Ver todos los servicios
+            {t('services.viewAll')}
           </button>
         </div>
       </div>

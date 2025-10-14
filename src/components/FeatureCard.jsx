@@ -1,26 +1,26 @@
 // src/components/FeatureCard.jsx
 
 import React from 'react';
-// Importa los íconos necesarios
+import { useTranslation } from 'react-i18next';
 import { FaMicrochip, FaMapMarkerAlt, FaStethoscope } from 'react-icons/fa';
 
-// Función para seleccionar el ícono basado en el nombre de la característica
-const getIconComponent = (title) => {
-  switch (title) {
-    case 'Tecnología':
+// Función para seleccionar el ícono basado en la clave de la característica
+const getIconComponent = (key) => {
+  switch (key) {
+    case 'technology':
       return FaMicrochip;
-    case 'Sucursales':
+    case 'locations':
       return FaMapMarkerAlt;
-    case 'Atención Médica':
+    case 'medical':
       return FaStethoscope;
     default:
       return null;
   }
 };
 
-const FeatureCard = ({ title, text }) => {
-  
-  const IconComponent = getIconComponent(title);
+const FeatureCard = ({ featureKey }) => {
+  const { t } = useTranslation();
+  const IconComponent = getIconComponent(featureKey);
   
   return (
     // Columna para que se vea bien dentro de una fila de 3 elementos (col-md-4)
@@ -45,9 +45,9 @@ const FeatureCard = ({ title, text }) => {
       </div>
       
       {/* Título y Texto */}
-      <h3 className="mb-3">{title}</h3>
+      <h3 className="mb-3">{t(`features.${featureKey}.title`)}</h3>
       <p className="text-muted" style={{ fontSize: '1.05rem', lineHeight: '1.6' }}>
-        {text}
+        {t(`features.${featureKey}.text`)}
       </p>
     </div>
   );

@@ -1,12 +1,10 @@
 // src/components/HeroImage.jsx
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const Hero = ({ 
-  imageUrl, 
-  title = "SPA", 
-  subtitle = "Tu SPA de confianza para el bienestar y la relajación"
-}) => {
+const Hero = ({ imageUrl }) => {
+  const { t } = useTranslation();
   
   // Altura mínima para asegurar que el contenido se vea bien en la página
   const heroStyle = {
@@ -38,12 +36,12 @@ const Hero = ({
 
       {/* Contenido centrado */}
       <div className="container position-relative" style={{ zIndex: 10 }}>
-        <h1 className="display-3 fw-bold mb-3 text-shadow-lg">{title}</h1>
-        <p className="lead fs-4 text-shadow-lg">{subtitle}</p>
+        <h1 className="display-3 fw-bold mb-3 text-shadow-lg">{t('hero.title')}</h1>
+        <p className="lead fs-4 text-shadow-lg">{t('hero.subtitle')}</p>
         
         {/* Botón de ejemplo para la llamada a la acción */}
-        <a href="#contacto" className="btn btn-light btn-lg mt-3">
-          Agenda tu Consulta
+        <a href="#contact" className="btn btn-light btn-lg mt-3">
+          {t('contact.title')}
         </a>
       </div>
     </div>

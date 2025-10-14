@@ -1,0 +1,152 @@
+{
+  "navbar": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "services": "SERVICES",
+    "contact": "CONTACT",
+    "language": "EN_US"
+  },
+  "hero": {
+    "title": "Welcome to SPA",
+    "subtitle": "Your Wellness Haven"
+  },
+  "about": {
+    "title": "SPA",
+    "description": "We are dedicated to providing the best spa experience",
+    "mainText": "Serenity is more than a spa, it's a promise of tranquility. Located in [Location], we specialize in offering personalized wellness experiences that rejuvenate the body and calm the mind.",
+    "secondaryText": "With a passionate team and the finest products, we transform your time into accessible luxury. Your journey to relaxation begins here."
+  },
+  "services": {
+    "title": "SPA SERVICES",
+    "description": "Here are our spa services described",
+    "viewMore": "View more",
+    "viewAll": "View all services",
+    "notFound": "Service not found",
+    "backToServices": "Back to Services",
+    "availableTreatments": "Available Treatments",
+    "book": "Book Now",
+    "items": {
+      "therapeutic": {
+        "title": "Therapeutic Massages",
+        "description": "Our therapeutic massages help relax muscles, relieve stress, and improve circulation.",
+        "subServices": [
+          {
+            "title": "Swedish Massage",
+            "duration": "60 min",
+            "price": "$85",
+            "description": "Deep relaxation to relieve muscle tension."
+          },
+          {
+            "title": "Lymphatic Drainage",
+            "duration": "90 min",
+            "price": "$120",
+            "description": "Gentle technique to stimulate the lymphatic system and detoxify."
+          },
+          {
+            "title": "Sports Massage",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Focus on specific areas for muscle recovery."
+          }
+        ]
+      },
+      "signature": {
+        "title": "Signature Collection",
+        "description": "Exclusive experience of premium treatments inspired by ancient rituals and modern techniques.",
+        "subServices": [
+          {
+            "title": "Ancient Ritual",
+            "duration": "120 min",
+            "price": "$250",
+            "description": "Full body treatment with exotic essential oils."
+          },
+          {
+            "title": "Diamond Experience",
+            "duration": "90 min",
+            "price": "$300",
+            "description": "Facial and body treatment with high-end products and colloidal gold."
+          }
+        ]
+      },
+      "facial": {
+        "title": "Facial Treatments",
+        "description": "Care for your skin with natural products and professional techniques that restore its luminosity.",
+        "subServices": [
+          {
+            "title": "Deep Cleansing",
+            "duration": "60 min",
+            "price": "$75",
+            "description": "Removal of impurities and blackheads for fresh skin."
+          },
+          {
+            "title": "Hyaluronic Acid Hydration",
+            "duration": "90 min",
+            "price": "$130",
+            "description": "Restores the hydration barrier and softens fine lines."
+          }
+        ]
+      },
+      "wellness": {
+        "title": "Wellness Rituals",
+        "description": "Immerse yourself in a sensory experience that combines aromatherapy, music, and relaxation techniques.",
+        "subServices": [
+          {
+            "title": "Hot Stone Therapy",
+            "duration": "90 min",
+            "price": "$140",
+            "description": "Combination of massage and heat for deep relaxation and pain relief."
+          },
+          {
+            "title": "Sea Salt Exfoliation",
+            "duration": "60 min",
+            "price": "$80",
+            "description": "Removes dead cells, leaving skin soft and renewed."
+          }
+        ]
+      }
+    }
+  },
+  "features": {
+    "technology": {
+      "title": "Technology",
+      "text": "Our company has state-of-the-art equipment and the most innovative studies for orthodontics and maxillofacial surgeries."
+    },
+    "locations": {
+      "title": "Locations",
+      "text": "We currently have a presence in two locations in Tijuana, as well as branches in Rosarito, Tecate, and Ensenada."
+    },
+    "medical": {
+      "title": "Medical Care",
+      "text": "Our doctors provide personalized care, building trust and ensuring quality service."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We're here to help. Send us a message and we'll get back to you shortly.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (Optional)",
+    "message": "Message",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "description": "Dental imaging and diagnostic clinic, offering state-of-the-art studies in Tijuana, Tecate, Rosarito, and Ensenada.",
+    "navigation": "Navigation",
+    "services": "Services",
+    "contact": "Contact Us",
+    "address": "Tijuana, B.C., Mexico",
+    "phone": "Phone: (555) 123-4567",
+    "email": "Email: info@dentametrics.com",
+    "copyright": "© {year} Dentametrics. All rights reserved.",
+    "links": {
+      "about": "About Us",
+      "services": "Services",
+      "contact": "Contact",
+      "massage": "Massages"
+    }
+  },
+  "common": {
+    "backToHome": "Back to Home"
+  }
+}

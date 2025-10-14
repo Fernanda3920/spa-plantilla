@@ -1,12 +1,12 @@
 // src/components/AboutSection.jsx
 
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const DENTAMETRICS_IMAGE_URL = 'https://cdn.pixabay.com/photo/2017/06/20/09/34/spa-2422421_1280.jpg'; 
-// NOTA: Reemplaza '/path/to/diente-stetoscopio.jpg' con la ruta
-// de la imagen que te gustó (usando el método de importación o /public).
+const DENTAMETRICS_IMAGE_URL = 'https://cdn.pixabay.com/photo/2017/06/20/09/34/spa-2422421_1280.jpg';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
   return (
     // Usa un padding generoso para separar la sección de otros elementos
     <section id="nosotros" className="py-5 my-5"> 
@@ -31,7 +31,6 @@ const AboutSection = () => {
               {/* Imagen */}
               <img
                 src={DENTAMETRICS_IMAGE_URL}
-                alt="Imagen de un diente y un estetoscopio"
                 className="img-fluid" // Hace la imagen responsiva dentro del círculo
                 // Esto ayuda a que la imagen cubra completamente el contenedor
                 style={{ 
@@ -47,19 +46,19 @@ const AboutSection = () => {
           </div>
 
           {/* Lado Derecho: TEXTO */}
-          <div className="col-md-6 ">
+          <div className="col-md-6">
             <h2 className="mb-4" style={{ fontSize: '2.5rem' }}>
-              SPA
+              {t('about.title')}
             </h2>
             
             {/* Párrafo principal */}
-            <p >
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt iusto qui in est veniam! Dolorum provident dolores cumque? Explicabo facilis animi ad praesentium sint dolore sunt nesciunt cumque. Libero, at?
+            <p>
+              {t('about.mainText')}
             </p>
 
             {/* Párrafo secundario */}
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus impedit dolorum fuga facilis. Maxime, dolores sunt numquam vel, non recusandae unde quasi nisi id incidunt eum ipsa praesentium. Dolore, non.
+              {t('about.secondaryText')}
             </p>
           </div>
           
