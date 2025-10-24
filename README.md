@@ -29,3 +29,5 @@ If you are developing a production application, we recommend using TypeScript wi
 ![captura1](docs/cap6.png)
 
 ![captura1](docs/cap7.png)
+
+Agregado el soporte de idiomas
