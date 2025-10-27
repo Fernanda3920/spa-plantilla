@@ -2,7 +2,6 @@
 import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import emailjs from 'emailjs-com';
-import TopBar from './TopBar';
 import MainNavbar from './MainBar';
 import Footer from './Footer';
 
@@ -31,8 +30,6 @@ const ContactForm = () => {
 
   return (
     <>
-      <TopBar/>
-      <MainNavbar logoSrc="/spa-logo.png" />
       <section id="contact" className="py-5" style={{ backgroundColor: '#ffffff' }}> 
         <div className="container">
           <div className="row justify-content-center mb-5">
@@ -76,7 +73,7 @@ const ContactForm = () => {
           </div>
         </div>
       </section>
-      <Footer/>
+
     </>
   );
 };

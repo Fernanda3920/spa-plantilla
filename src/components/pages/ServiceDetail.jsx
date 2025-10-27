@@ -7,7 +7,6 @@ import '../ServicesSection.css';
 import './ServiceDetail.css';
 import MainNavbar from '../MainBar';
 import Footer from '../Footer';
-import TopBar from '../TopBar';
 
 // Mapeo de IDs de la URL a las claves de traducción
 const serviceKeyMap = {
@@ -51,7 +50,6 @@ function ServiceDetail() {
 
   return (
     <>
-      <TopBar/>
       <div className="service-detail container">
         <div className="detail-header">
           <img src={service.imageUrl} alt={service.title} className="detail-image" />

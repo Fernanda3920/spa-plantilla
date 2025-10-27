@@ -1,14 +1,16 @@
 // src/components/MainNavbar.jsx
 
 import React from 'react';
-import { FaSearch } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa'; // FaFacebookF ya no es necesaria
 import { useTranslation } from 'react-i18next';
 import logoImage from '../assets/spa-logo.png'; 
-import logomx from '../assets/mx.png';
+import logomx from '../assets/mx.png'; // No se utiliza, lo mantengo por si acaso
+import LanguageSelector from './LanguageSelector'; // Mantenemos la importación
 
 const MainNavbar = ({ logoSrc, logoAlt }) => {
   const { t } = useTranslation();
   return (
+    // Se elimina la etiqueta <header> que contenía la topbar
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3">
       <div className="container">
         <a className="navbar-brand" href="#">
@@ -49,6 +51,7 @@ const MainNavbar = ({ logoSrc, logoAlt }) => {
                 </a>
               </li>
             ))}
+            
             <li className="nav-item mx-2">
               <a 
                 className="nav-link text-uppercase text-dark"
@@ -58,7 +61,12 @@ const MainNavbar = ({ logoSrc, logoAlt }) => {
                 {t('navbar.contact')}
               </a>
             </li>
-             
+
+            {/* Selector de Lenguaje agregado como un elemento de la lista de navegación */}
+            <li className="nav-item ms-3">
+              <LanguageSelector />
+            </li>
+              
           </ul>
         </div>
       </div>
