@@ -25,17 +25,9 @@ const serviceImageMap = {
   wellness: 'https://cdn.pixabay.com/photo/2018/02/27/03/36/stones-3184610_1280.jpg'
 };
 
-/* ❌ CORRECCIÓN: El array incompleto que estaba aquí: 
-  ]
-  },
-  ];
-  fue eliminado ya que causaba un error de sintaxis.
-*/
-
 function ServiceDetail() {
   const { id } = useParams();
   const { t } = useTranslation();
-  // Se usa el ID del parámetro para obtener la clave del servicio (e.g., 'therapeutic')
   const serviceKey = serviceKeyMap[id];
 
   if (!serviceKey) {
