@@ -40,7 +40,7 @@ const Hero = ({ imageUrl }) => {
         <p className="lead fs-4 text-shadow-lg">{t('hero.subtitle')}</p>
         
         {/* Botón de ejemplo para la llamada a la acción */}
-        <a href="#contact" className="btn btn-light btn-lg mt-3">
+        <a href="#contacto" className="btn btn-light btn-lg mt-3">
           {t('contact.title')}
         </a>
       </div>
