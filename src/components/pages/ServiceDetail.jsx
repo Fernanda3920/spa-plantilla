@@ -50,6 +50,7 @@ function ServiceDetail() {
 
   return (
     <>
+    <MainNavbar/>
       <div className="service-detail container">
         <div className="detail-header">
           <img src={service.imageUrl} alt={service.title} className="detail-image" />
