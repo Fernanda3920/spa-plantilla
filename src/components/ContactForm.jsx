@@ -30,7 +30,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <section id="contact" className="py-5" style={{ backgroundColor: '#ffffff' }}> 
+      <section id="contacto" className="py-5" style={{ backgroundColor: '#ffffff' }}> 
         <div className="container">
           <div className="row justify-content-center mb-5">
             <div className="col-lg-8 text-center">
