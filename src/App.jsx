@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './components/MainPage';
 import ServiceDetail from './components/pages/ServiceDetail';
 import WhatsAppReservation from './components/WhatsAppReservation';
+import CalendlyWidget from './components/CalendlyWidget';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/servicio/:id" element={<ServiceDetail />} />
         <Route path="/reserva-whatsapp" element={<WhatsAppReservation />} />
+        <Route path="/calendly" element={<CalendlyWidget/>} />
         {/* Ejemplo de otra ruta */}
       </Routes>
     </Router>

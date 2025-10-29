@@ -77,7 +77,6 @@ const ContactForm = () => {
     })
     .catch((error) => {
       console.error('Error:', error);
-      // Cerrar toast de carga y mostrar error
       toast.dismiss(loadingToast);
       toast.error('Ocurrió un error al enviar el mensaje. Por favor, intenta nuevamente.', {
         position: "top-right",

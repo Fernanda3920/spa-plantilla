@@ -4,7 +4,8 @@
     "about": "ABOUT",
     "services": "SERVICES",
     "contact": "CONTACT",
-    "language": "EN_US"
+    "language": "EN_US",
+    "reserve": "RESERVE"
   },
   "hero": {
     "title": "Welcome to HEDRA SPA",
