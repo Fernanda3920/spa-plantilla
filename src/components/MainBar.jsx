@@ -1,5 +1,4 @@
 // src/components/MainNavbar.jsx
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import logoImage from '../assets/spa-logo.png';
@@ -7,7 +6,7 @@ import LanguageSelector from './LanguageSelector';
 import { PopupButton } from 'react-calendly';
 
 const MainNavbar = ({ logoSrc, logoAlt }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   // Elementos de navegación principales
   const navItems = [
@@ -17,19 +16,18 @@ const MainNavbar = ({ logoSrc, logoAlt }) => {
     { key: 'contact', path: '/#contacto' },
   ];
 
+  // 🔹 Elegir link de Calendly según idioma
+  const calendlyUrl = i18n.language.startsWith('es')
+    ? 'https://calendly.com/hedraspa/30min'      // Español
+    : 'https://calendly.com/hedraspa-en/30min'; // Inglés
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
       <div className="container">
-        {/* Logo */}
         <a className="navbar-brand" href="#">
-          <img
-            src={logoImage}
-            alt={logoAlt || 'SPA'}
-            height="50"
-          />
+          <img src={logoImage} alt={logoAlt || 'SPA'} height="50" />
         </a>
 
-        {/* Botón hamburguesa móvil */}
         <button
           className="navbar-toggler"
           type="button"
@@ -42,11 +40,8 @@ const MainNavbar = ({ logoSrc, logoAlt }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Enlaces de navegación */}
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul className="navbar-nav align-items-center">
-
-            {/* Mapeo de secciones */}
             {navItems.map((item) => (
               <li className="nav-item mx-2" key={item.key}>
                 <a
@@ -63,18 +58,16 @@ const MainNavbar = ({ logoSrc, logoAlt }) => {
               </li>
             ))}
 
-            {/* 🔹 Botón de Reserva (Calendly) */}
+            {/* 🔹 Botón de Reserva dinámico */}
             <li className="nav-item mx-2">
               <PopupButton
-      url="https://calendly.com/hedraspa/30min"
-      rootElement={document.getElementById("root")}
-      text={t("navbar.reserve") || "Reserva"}
-      className="btn px-3 fw-bold"
-      
-    />
+                url={calendlyUrl}
+                rootElement={document.getElementById("root")}
+                text={t("navbar.reserve") || "Reserva"}
+                className="btn px-2 fw-bold"
+              />
             </li>
 
-            {/* Selector de idioma */}
             <li className="nav-item ms-3">
               <LanguageSelector />
             </li>
