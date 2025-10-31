@@ -28,26 +28,56 @@
     "book": "Reservar",
     "items": {
       "therapeutic": {
-        "title": "Masajes Terapéuticos",
+        "title": "Tratamientos Corporales",
         "description": "Nuestros masajes terapéuticos ayudan a relajar músculos, aliviar el estrés y mejorar la circulación.",
         "subServices": [
           {
-            "title": "Masaje Sueco",
+            "title": "Armonia Corporal",
             "duration": "60 min",
             "price": "$85",
-            "description": "Relajación profunda para aliviar tensiones musculares."
+            "description": "Déjate envolver por un ritual de serenidad donde suaves técnicas suecas disuelven la tensión y renuevan la energía vital. Las piedras de obsidiana, cálidas y profundas, despiertan la circulación mientras la aromaterapia y los aceites esenciales acarician la piel, sumergiéndote en un estado de armonía total."
           },
           {
-            "title": "Drenaje Linfático",
+            "title": "Revitalización Activa",
             "duration": "90 min",
             "price": "$120",
-            "description": "Técnica suave para estimular el sistema linfático y desintoxicar."
+            "description": "Disfruta de una combinación de técnicas restaurativas diseñadas para personas activas. Relájate con un masaje craneal que estimula la circulación. El tratamiento continúa con estiramientos suaves y movimientos profundos, restaurando el equilibrio del cuerpo y liberando la tensión acumulada en los músculos fatigados."
           },
           {
-            "title": "Masaje Deportivo",
+            "title": "Equilibrio a medida",
             "duration": "45 min",
             "price": "$95",
-            "description": "Enfoque en áreas específicas para la recuperación muscular."
+            "description": "Un viaje de bienestar creado intuitivamente junto a tu terapeuta, donde cada técnica se adapta a tus necesidades energéticas y físicas. Aliviarás la tensión y el estrés en áreas específicas mientras todo tu cuerpo se armoniza, despertando una profunda sensación de equilibrio, relajación y renovación interior."
+          },
+          {
+            "title": "Ritual de conexión",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Déjate envolver en un viaje de calma y armonía. La respiración consciente abre el camino hacia la serenidad, mientras un masaje aromático con aceites tibios despierta los sentidos y renueva la energía. Un envoltorio cálido sella la experiencia, fundiendo cuerpo y alma en una profunda sensación de paz interior."
+          },
+            {
+            "title": "Equilibrio vital",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Comienza tu experiencia con una limpieza y exfoliación refrescante que despierta y revitaliza tus pies. Continúa con un masaje nutritivo y terapéutico, acompañado de trabajo en puntos específicos, que libera la tensión acumulada y restablece el equilibrio del cuerpo y la energía. Este ritual conecta tus pies con la tierra, brindando una sensación profunda de bienestar, ligereza y armonía integral."
+          },
+          {
+            "title": "Santuario de armonía",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Sumérjanse en una experiencia de serenidad compartida con un masaje de 60 minutos que armoniza cuerpo y mente. Luego, disfruten de un espacio íntimo y acogedor con fresas y una copa de prosecco, donde la calma y la conexión fluyen naturalmente. Finalicen con un baño en jacuzzi que renueva la energía y celebra la unión."
+          },
+           {
+            "title": "Resplandor",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Inicia tu viaje hacia la armonía interior con respiración consciente que despierta los sentidos y equilibra la energía. Un masaje corporal relaja cada músculo y prepara la piel para una delicada exfoliación que renueva y revitaliza. La experiencia culmina con un suave masaje hidratante que sella la luminosidad, envolviéndote en una sensación de bienestar y serenidad profunda."
+          },
+           {
+            "title": "Aura de seda",
+            "duration": "45 min",
+            "price": "$95",
+            "description": "Sumérgete en un ritual de renovación que nutre tu piel y tu energía. Comienza con un facial delicado que despierta la luminosidad natural y equilibra la vitalidad del rostro, seguido de un masaje sueco relajante que libera tensiones, activa la circulación y armoniza cuerpo y mente. La exfoliación profunda elimina impurezas y revela una piel suave, luminosa y purificada, dejando un delicado “velo de novia” que simboliza frescura y pureza. El ritual culmina con una envoltura corporal nutritiva, que tonifica, desinflama y suaviza líneas y manchas, promoviendo un bienestar profundo, serenidad interior y una sensación de renovación integral que abraza cuerpo, mente y espíritu."
           }
         ]
       },
