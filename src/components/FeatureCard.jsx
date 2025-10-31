@@ -33,7 +33,7 @@ const FeatureCard = ({ featureKey }) => {
           width: '120px',
           height: '120px',
           borderRadius: '50%', // Hace la forma circular
-          backgroundColor: '#a9c7a1ff', // Fondo blanco
+          backgroundColor: '#2D621E', // Fondo blanco
         }}
       >
         {IconComponent && (

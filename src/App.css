@@ -1,4 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-     overflow-y: auto;
+    overflow-y: auto;
+    background-color: #f7f6ef;
 }

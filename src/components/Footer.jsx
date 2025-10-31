@@ -8,7 +8,10 @@ import logo from '../assets/spa-logo.png';
 const Footer = ({ logoSrc, logoAlt = 'Dentametrics Logo' }) => {
   const { t } = useTranslation();
   return (
-    <footer className="bg-dark text-white py-5">
+   <footer 
+  className="text-white py-5" 
+  style={{ backgroundColor: '#1C3B14' }} // ⭐ ¡COLOR APLICADO AQUÍ!
+>
       <div className="container">
         <div className="row">
           

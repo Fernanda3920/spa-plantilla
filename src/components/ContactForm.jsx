@@ -113,7 +113,7 @@ const ContactForm = () => {
       />
       
       
-      <section id="contacto" className="py-5" style={{ backgroundColor: '#ffffff' }}> 
+      <section id="contacto" className="py-5" style={{ backgroundColor: '#f7f6ef' }}> 
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
