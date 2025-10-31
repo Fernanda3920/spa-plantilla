@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../App.css';
 import MainNavbar from '../components/MainBar';
 import FeatureCardGroup from '../components/FeatureCardGroup';
@@ -11,65 +12,75 @@ import ContactForm from './ContactForm';
 const HERO_BACKGROUND_URL = 'https://cdn.pixabay.com/photo/2024/04/12/18/51/model-8692431_1280.jpg';
 
 function MainPage() {
-  return (
-    <div>
-      <header>
-        {/* ⭐ CAMBIO CLAVE AQUÍ: Pasando el estilo como prop logoStyle */}
+  const { t, i18n } = useTranslation();
+
+  // Función para generar el enlace de WhatsApp con el mensaje traducido
+  const getWhatsAppLink = () => {
+    const phoneNumber = "526643723351";
+    const message = encodeURIComponent(t('whatsapp.message'));
+    return `https://wa.me/${phoneNumber}?text=${message}`;
+  };
+
+  return (
+    <div>
+      <header>
         <MainNavbar 
-            logoSrc="/spa-logo.png" 
-            logoStyle={{ width: '150px', height: 'auto'}} 
+          logoSrc="/spa-logo.png" 
+          logoStyle={{ width: '150px', height: 'auto'}} 
         />
-        <Hero 
-          imageUrl={HERO_BACKGROUND_URL} 
-          title="SPA"
-          subtitle="Centro de bienestar y relajación"
-        />
-      </header>
+        <Hero 
+          imageUrl={HERO_BACKGROUND_URL} 
+          title="SPA"
+          subtitle="Centro de bienestar y relajación"
+        />
+      </header>
 
-      <main>
-        <FeatureCardGroup />
-        <AboutSection />
-    <a
-  href="https://wa.me/526643723351?text=Hola,%20quiero%20hacer%20una%20reservación."
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{
-    position: "fixed",
-    bottom: "25px",
-    right: "25px",
-    width: "65px",
-    height: "65px",
-    backgroundColor: "#25D366",
-    color: "white",
-    borderRadius: "50%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: "32px",
-    boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
-    textDecoration: "none",
-    zIndex: 1000,
-    transition: "transform 0.2s ease, box-shadow 0.2s ease",
-  }}
-  onMouseEnter={(e) => {
-    e.currentTarget.style.transform = "scale(1.1)";
-    e.currentTarget.style.boxShadow = "0 6px 18px rgba(0,0,0,0.4)";
-  }}
-  onMouseLeave={(e) => {
-    e.currentTarget.style.transform = "scale(1)";
-    e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.3)";
-  }}
->
-  <i className="fa-brands fa-whatsapp"></i>
-</a>
+      <main>
+        <FeatureCardGroup />
+        <AboutSection />
+        
+        {/* Botón de WhatsApp con mensaje traducido */}
+        <a
+          href={getWhatsAppLink()}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "fixed",
+            bottom: "25px",
+            right: "25px",
+            width: "65px",
+            height: "65px",
+            backgroundColor: "#25D366",
+            color: "white",
+            borderRadius: "50%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "32px",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+            textDecoration: "none",
+            zIndex: 1000,
+            transition: "transform 0.2s ease, box-shadow 0.2s ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.1)";
+            e.currentTarget.style.boxShadow = "0 6px 18px rgba(0,0,0,0.4)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+            e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.3)";
+          }}
+          title={t('whatsapp.message')} // Tooltip con el mensaje
+        >
+          <i className="fa-brands fa-whatsapp"></i>
+        </a>
 
-
-        <ServidesSection />
-        <ContactForm/>
-        <Footer />
-      </main>
-    </div>
-  );
+        <ServidesSection />
+        <ContactForm/>
+        <Footer />
+      </main>
+    </div>
+  );
 }
 
 export default MainPage;

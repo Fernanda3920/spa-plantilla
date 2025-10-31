@@ -10,7 +10,6 @@ const MainNavbar = ({ logoSrc, logoAlt }) => {
 
   // Elementos de navegación principales
   const navItems = [
-    { key: 'home', path: '/#inicio' },
     { key: 'about', path: '/#nosotros' },
     { key: 'services', path: '/#servicios' },
     { key: 'contact', path: '/#contacto' },

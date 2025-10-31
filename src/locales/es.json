@@ -12,10 +12,10 @@
     "subtitle": "Tu Refugio de Bienestar"
   },
   "about": {
-    "title": "SPA",
-    "description": "Nos dedicamos a brindar la mejor experiencia de spa",
-    "mainText": "Serenity es más que un spa, es una promesa de tranquilidad. Ubicado en [Ubicación], nos especializamos en ofrecer experiencias de bienestar personalizadas que rejuvenecen el cuerpo y calman la mente.",
-    "secondaryText": "Con un equipo apasionado y los mejores productos, transformamos tu tiempo en un lujo accesible. Tu viaje hacia la relajación comienza aquí."
+    "title": "NUESTRO SPA",
+    "description": "Hedra Spa es un refugio de bienestar y relajación donde tu cuerpo y mente encuentran equilibrio.",
+    "mainText": "Disfruta de nuestros tratamientos personalizados en un ambiente tranquilo y acogedor. Nuestro objetivo es brindarte una experiencia de relajación profunda que renueve tu energía y vitalidad.",
+    "secondaryText": "¡Ven y descubre tu momento Hedra! 🌿"
   },
   "services": {
     "title": "SERVICIOS DE SPA",
@@ -162,14 +162,14 @@
   },
   "footer": {
     "rights": "Todos los derechos reservados",
-    "description": "Clínica de imagen y diagnóstico dental, ofreciendo estudios de vanguardia en Tijuana, Tecate, Rosarito y Ensenada.",
+    "description": "El ritual de spa",
     "navigation": "Navegación",
     "services": "Servicios",
     "contact": "Contáctanos",
     "address": "Tijuana, B.C., México",
     "phone": "Teléfono: (555) 123-4567",
-    "email": "Correo: info@dentametrics.com",
-    "copyright": "© {year} Dentametrics. Todos los derechos reservados.",
+    "email": "Correo: hedraspa@gmail.com",
+    "copyright": "© Todos los derechos reservados.",
     "links": {
       "about": "Nosotros",
       "services": "Servicios",
@@ -177,7 +177,11 @@
       "massage": "Masajes"
     }
   },
+  "whatsapp": {
+    "message": "Hola, me gustaría obtener más información sobre sus servicios de spa"
+  },
   "common": {
     "backToHome": "Volver al inicio"
   }
+  
 }

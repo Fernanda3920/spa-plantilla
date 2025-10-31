@@ -2,12 +2,14 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import MinimalisCarousel from './MinimalistCarousel';
 
-const DENTAMETRICS_IMAGE_URL = 'https://cdn.pixabay.com/photo/2017/06/20/09/34/spa-2422421_1280.jpg';
+const DENTAMETRICS_IMAGE_URL = 'https://lh3.googleusercontent.com/a/ACg8ocIjY6WiDqOuklF97RopiU3byiLL0njd5QHsB1f2WB4_G0rRheI=s360-c-no';
 
 const AboutSection = () => {
   const { t } = useTranslation();
   return (
+    <>
     <section 
         id="nosotros" 
         className="py-5 my-5"
@@ -51,10 +53,11 @@ const AboutSection = () => {
               {t('about.secondaryText')}
             </p>
           </div>
-          
         </div>
       </div>
     </section>
+
+</>
   );
 };
 

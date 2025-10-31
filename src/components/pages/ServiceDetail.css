@@ -46,7 +46,7 @@
 .back-btn {
     display: inline-block;
     padding: 10px 25px;
-    background-color: #a9c7a1ff;
+    background-color: #2d621e;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -82,7 +82,7 @@
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border-top: 5px solid #a9c7a1ff; /* Línea decorativa superior */
+    border-top: 5px solid #2d621e; /* Línea decorativa superior */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -121,7 +121,7 @@
 .book-btn {
     width: 100%;
     padding: 12px;
-    background-color: #a9c7a1ff; /* Marrón más profundo */
+    background-color: #2d621e; /* Marrón más profundo */
     color: white;
     border: none;
     border-radius: 8px;
